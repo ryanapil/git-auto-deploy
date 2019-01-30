@@ -27,7 +27,7 @@ cd repo
 GIT_WORK_TREE=/srv/users/serverpilot/apps/APPNAME/public git checkout -f master
 ```
 
-8. Create a PHP file for GitHub to run when the master branch is altered. (~/apps/APPNAME/public/github-deploy.php)
+8. Create a PHP file for GitHub to run when the master branch is altered. (~/apps/APPNAME/public/deploy.php)
 
 ```
 <?php
@@ -48,12 +48,12 @@ GIT_WORK_TREE=/srv/users/serverpilot/apps/APPNAME/public git checkout -f master
 9. Add the `POST` hook within GitHub.
 
 ```
-http://DOMAIN.TLD/github-deploy.php?secret=1234567890
+http://DOMAIN.TLD/deploy.php?secret=1234567890
 ```
 
 10.  Make changes via Git, then commit them to the "master" branch, and push.
 
 11. The files were now deployed to `~/apps/APPNAME/public` as intended.
-  * For additional security, change the name of `github-deploy.php` to something containing random characters, such as `github-deploy-23d98th98y.php`. If you do that, don't forget to update the URL you configured in GitHub.
+  * For additional security, change the name of `deploy.php` to something containing random characters, such as `deploy-23d98th98y.php`. If you do that, don't forget to update the URL you configured in GitHub.
 
 For debugging, the script in that blog post creates a log file at `~/apps/APPNAME/public/deploy.log`. You can also check your app's nginx logs if you aren't sure GitHub made the request.
