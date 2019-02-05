@@ -2,7 +2,7 @@
 
 Automatically deploy latest git repository branch via PHP
 
-This tutorial is based on a [ServerPilot](https://serverpilot.io/a/d4ddebee3c49) installation on an Ubuntu based VPS provided by [DigitialOcean](https://m.do.co/c/06e11948f7aa). Other configurations will work with minor modification to the below script.
+This tutorial is based on a [ServerPilot](https://serverpilot.io/a/d4ddebee3c49) installation on an Ubuntu based VPS provided by [DigitalOcean](https://digitalocean.com/?refcode=06e11948f7aa). Other configurations will work with minor modification to the below script.
 
 ## Configuration
 
